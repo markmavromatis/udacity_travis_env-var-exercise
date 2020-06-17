@@ -1,6 +1,6 @@
 # Use NodeJS base image
 FROM node:13
-ARG PRINT_THIS
+ARG PRINT_THIS=DEFAULT
 ENV env_PRINT_THIS=$PRINT_THIS
 
 # Create app directory
