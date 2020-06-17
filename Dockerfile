@@ -1,7 +1,7 @@
 # Use NodeJS base image
 FROM node:13
 ARG PRINT_THIS
-ENV PRINT_THIS="Some Value"
+ENV env_PRINT_THIS=$PRINT_THIS
 
 # Create app directory
 WORKDIR /usr/src/app

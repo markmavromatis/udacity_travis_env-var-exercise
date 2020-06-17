@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple-node-env --build-arg PRINT_THIS=${PRINT_THIS} .
+  - docker build -t simple-node-env .
   - docker tag simple-node-env markmavromatis/simple-node-env:latest
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
